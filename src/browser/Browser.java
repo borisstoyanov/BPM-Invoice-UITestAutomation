@@ -1,5 +1,7 @@
 package browser;
 
+import java.util.Set;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -26,4 +28,15 @@ public class Browser {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));	
 	}
 
+	
+	 public static void handleMultipleWindows(String windowTitle) {
+         Set<String> windows = instance.getWindowHandles();
+
+         for (String window : windows) {
+        	 instance.switchTo().window(window);
+             if (instance.getTitle().contains(windowTitle)) {
+                 return;
+             }
+         }
+     }
 }

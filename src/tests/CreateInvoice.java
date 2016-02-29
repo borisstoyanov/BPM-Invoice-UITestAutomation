@@ -9,6 +9,7 @@ import enums.WorspacePasswords;
 import page_objects.workspace.PO_Applications;
 import page_objects.workspace.PO_LoginPage;
 import page_objects.workspace.PO_MyTasks;
+import page_objects.workspace.PO_NewInvoiceApproval;
 
 public class CreateInvoice {
 	PO_MyTasks myTasks;
@@ -25,7 +26,11 @@ public class CreateInvoice {
 	public void createInvoice(){
 		
 		PO_Applications app = myTasks.goToApplications();
-		app.startInvoiceApproval();
+		PO_NewInvoiceApproval newInvoice = app.startInvoiceApproval();
+		newInvoice.addFile();
+		
+		
+		
 		
 	}
 

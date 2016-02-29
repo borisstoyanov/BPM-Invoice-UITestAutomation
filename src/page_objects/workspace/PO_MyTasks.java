@@ -11,8 +11,9 @@ public class PO_MyTasks {
 	}
 
 	public PO_Applications goToApplications() {
-		Browser.instance.findElement(By.xpath("//a[text()='InvoiceApproval'")).click();
 		
+		Browser.waitForXpath("//a[@title='Applications']", 20);
+		Browser.instance.findElement(By.xpath("//a[@title='Applications']")).click();
 		return new PO_Applications();
 	}
 }
