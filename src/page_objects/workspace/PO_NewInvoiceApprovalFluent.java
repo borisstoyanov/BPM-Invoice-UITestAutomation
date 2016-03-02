@@ -2,20 +2,22 @@ package page_objects.workspace;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 import browser.Browser;
+import enums.InvoiceType;
 
 public class PO_NewInvoiceApprovalFluent {
 
-	private void clear(String id) {
-		Browser.instance.findElement(By.id(id)).clear();
+	private void clear(String xpath) {
+		Browser.instance.findElement(By.xpath(xpath)).clear();
 		
 	}
 	
-	private void sendKeys(String id, String keysToSend){
-		Browser.instance.findElement(By.id(id)).sendKeys(keysToSend);
-		Browser.instance.findElement(By.id(id)).sendKeys(Keys.RETURN);
+	private void sendKeys(String xpath, String keysToSend){
+		Browser.instance.findElement(By.xpath(xpath)).sendKeys(keysToSend);
+		Browser.instance.findElement(By.xpath(xpath)).sendKeys(Keys.RETURN);
 
 	}
 	
@@ -37,8 +39,8 @@ public class PO_NewInvoiceApprovalFluent {
 	}
 
 	public PO_NewInvoiceApprovalFluent addEntity(String keysToSend) {
-		clear("compCodeId::content");
-		sendKeys("compCodeId::content", keysToSend);
+		clear("//input[@id='compCodeId::content']");
+		sendKeys("//input[@id='compCodeId::content']", keysToSend);
 		elemetHasText("//tr[@id='compNameInp']//span");
 		return this;
 
@@ -47,23 +49,23 @@ public class PO_NewInvoiceApprovalFluent {
 
 
 	public PO_NewInvoiceApprovalFluent addVendorNumber(String keysToSend) {
-		clear("vendNumSubmitIT::content");
-		sendKeys("vendNumSubmitIT::content", keysToSend);
+		clear("//input[@id='vendNumSubmitIT::content']");
+		sendKeys("//input[@id='compCodeId::content']", keysToSend);
 		elemetHasText("//span[@id='vendNmIC']");
 		return this;
 
 	}
 
-	public PO_NewInvoiceApprovalFluent selectInvoiceType(String string) {
-		// TODO Auto-generated method stub
-
+	public PO_NewInvoiceApprovalFluent selectInvoiceType(InvoiceType type) {
+		new Select(Browser.instance.findElement(By.xpath("//select"))).selectByVisibleText(type.toString());		
 		return this;
 
 	}
 
-	public PO_NewInvoiceApprovalFluent addInvoiceNumber(String string) {
-		// TODO Auto-generated method stub
-
+	public PO_NewInvoiceApprovalFluent addInvoiceNumber(String keysToSend) {
+		clear("//label[text()='Invoice Number']//..//..//input");
+		sendKeys("//label[text()='Invoice Number']//..//..//input", keysToSend);
+		
 		return this;
 
 	}
