@@ -28,9 +28,15 @@ public class CreateInvoice {
 		PO_Applications app = myTasks.goToApplications();
 		PO_NewInvoiceApproval newInvoice = app.startInvoiceApproval();
 		newInvoice.addFile();
-		
-		
-		
+		newInvoice.addEntity("");
+		newInvoice.addVendorNumber("");
+		newInvoice.selectInvoiceType("");
+		newInvoice.addInvoiceNumber("");
+		newInvoice.addInvoiceDescription("");
+		newInvoice.addCurrency("");
+		newInvoice.addTotal("");
+		newInvoice.submit();
+				
 		
 	}
 

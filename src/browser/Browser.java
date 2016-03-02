@@ -36,7 +36,6 @@ public class Browser {
 		do {
 			
 			windows = instance.getWindowHandles();
-			int size = windows.size();
 			try {
 				Thread.sleep(2000);
 			} catch (InterruptedException e) {
