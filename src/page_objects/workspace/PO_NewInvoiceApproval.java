@@ -7,7 +7,10 @@ import browser.Browser;
 public class PO_NewInvoiceApproval {
 
 	public void addFile() {
-		Browser.instance.findElement(By.xpath("//input[@value='UPDATE']")).sendKeys("C:\\Dreamix\\bpm\\InvoiceManagement\\BPM-Invoice-UITestAutomation\\testFile.pdf");
+		Browser.instance.findElement(By.xpath("//label[text()='Select your invoice file']//..//..//..//input")).sendKeys("C:\\Dreamix\\bpm\\InvoiceManagement\\BPM-Invoice-UITestAutomation\\testFile.pdf");
 	}
 
+	public void addFile(String filePath) {
+		Browser.instance.findElement(By.xpath("//label[text()='Select your invoice file']//..//..//..//input")).sendKeys(filePath);
+	}
 }

@@ -8,9 +8,9 @@ public class PO_Applications {
 
 	public PO_NewInvoiceApproval startInvoiceApproval() {
 		
-		Browser.waitForXpath("//a[text()='InvoiceApproval']", 20);
+		Browser.waitForXpath("//a[contains(@title,'InvoiceApproval')]", 20);
 		
-		Browser.instance.findElement(By.xpath("//a[text()='InvoiceApproval']")).click();
+		Browser.instance.findElement(By.xpath("//a[contains(@title,'InvoiceApproval')]")).click();
 		
 		switchToInvoiceApprovalWindow();
 		return new PO_NewInvoiceApproval();

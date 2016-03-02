@@ -16,7 +16,7 @@ public class PO_LoginPage {
 	}
 
 	public static PO_LoginPage goTo() {
-		Browser.instance.get("http://bpmuat115.vistajet.local:8001/bpm/workspace/");
+		Browser.instance.get("http://bpmdev116.vistajet.local:8001/bpm/workspace");
 		return new PO_LoginPage();
 	}
 
