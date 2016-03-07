@@ -12,6 +12,7 @@ public class PO_Applications {
 		
 		Browser.instance.findElement(By.xpath("//a[contains(@title,'InvoiceApproval')]")).click();
 		
+				
 		switchToInvoiceApprovalWindow();
 		return new PO_NewInvoiceApproval();
 	}

@@ -31,17 +31,19 @@ public class Browser {
 	}
 
 	public static void handleMultipleWindows(String windowTitle) {
-		
+		int i = 0;
 		Set<String> windows;
 		do {
-			
+			i++;
 			windows = instance.getWindowHandles();
 			try {
 				Thread.sleep(2000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-
+			if(i>=10){
+				break;
+			}
 		} while (windows.size() == 1);
 
 		for (String window : windows) {
