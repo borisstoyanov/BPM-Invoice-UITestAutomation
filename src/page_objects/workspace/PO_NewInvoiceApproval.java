@@ -9,5 +9,10 @@ public class PO_NewInvoiceApproval {
 		return new PO_NewInvoiceApprovalFluent();
 	}
 
+	public void submit() {
+		// TODO Auto-generated method stub
+		
+	}
+
 	
 }
