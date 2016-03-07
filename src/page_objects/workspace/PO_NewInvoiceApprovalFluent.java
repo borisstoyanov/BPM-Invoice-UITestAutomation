@@ -48,14 +48,14 @@ public class PO_NewInvoiceApprovalFluent {
 
 	public PO_NewInvoiceApprovalFluent addVendorNumber(String keysToSend) {
 		clear("//input[@id='vendNumSubmitIT::content']");
-		sendKeys("//input[@id='compCodeId::content']", keysToSend);
+		sendKeys("//input[@id='vendNumSubmitIT::content']", keysToSend);
 		elemetHasText("//span[@id='vendNmIC']");
 		return this;
 
 	}
 
 	public PO_NewInvoiceApprovalFluent selectInvoiceType(InvoiceType type) {
-		new Select(Browser.instance.findElement(By.xpath("//select"))).selectByVisibleText(type.toString());
+		new Select(Browser.instance.findElement(By.xpath("//select"))).selectByVisibleText(type.getValue());
 		return this;
 
 	}
@@ -95,5 +95,10 @@ public class PO_NewInvoiceApprovalFluent {
 		Browser.instance.findElement(By.xpath("//span[text()='Submit']")).click();
 		return this;
 
+	}
+
+	public void addInvoiceDate(String date) {
+		clear("//label[text()='Invoice Date']//..//..//input");
+		sendKeys("//label[text()='Invoice Date']//..//..//input", date);
 	}
 }

@@ -27,6 +27,8 @@ public class CreateInvoice {
 		
 		PO_Applications app = myTasks.goToApplications();
 		PO_NewInvoiceApproval newInvoice = app.startInvoiceApproval();
+		
+		newInvoice.submit();
 
 						
 	}
