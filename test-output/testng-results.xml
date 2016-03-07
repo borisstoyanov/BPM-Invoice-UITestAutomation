@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61967" started-at="2016-03-07T11:40:44Z" finished-at="2016-03-07T11:41:46Z">
+  <suite name="Default suite" duration-ms="30156" started-at="2016-03-07T13:34:08Z" finished-at="2016-03-07T13:34:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="61967" started-at="2016-03-07T11:40:44Z" finished-at="2016-03-07T11:41:46Z">
+    <test name="Default test" duration-ms="30156" started-at="2016-03-07T13:34:08Z" finished-at="2016-03-07T13:34:38Z">
       <class name="tests.CreateInvoice">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.CreateInvoice@44a664f2]" name="setup" is-config="true" duration-ms="9868" started-at="2016-03-07T13:40:44Z" finished-at="2016-03-07T13:40:54Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.CreateInvoice@7cf10a6f]" name="setup" is-config="true" duration-ms="8909" started-at="2016-03-07T15:34:08Z" finished-at="2016-03-07T15:34:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="createInvoice()[pri:0, instance:tests.CreateInvoice@44a664f2]" name="createInvoice" duration-ms="52086" started-at="2016-03-07T13:40:54Z" finished-at="2016-03-07T13:41:46Z">
+        <test-method status="PASS" signature="createInvoice()[pri:0, instance:tests.CreateInvoice@7cf10a6f]" name="createInvoice" duration-ms="21237" started-at="2016-03-07T15:34:17Z" finished-at="2016-03-07T15:34:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createInvoice -->

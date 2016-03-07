@@ -1,7 +1,8 @@
 package enums;
 
 public enum WorspacePasswords {
-	ADMINISTRATOR_PASSWORD(""),	TESTAPUK_PASS("Welcome1"),	DIMITROV("Tainaparola1");
+	ADMINISTRATOR_PASSWORD(""),	TESTAPUK_PASS("Welcome1"),	TESTAPAT("Welcome1"),
+DIMITROV("Tainaparola1");
 
 	private String password;
 

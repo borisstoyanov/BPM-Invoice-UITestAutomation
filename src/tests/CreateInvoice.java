@@ -18,7 +18,7 @@ public class CreateInvoice {
 	public void setup(){
 		Browser.init();
 		PO_LoginPage login = PO_LoginPage.goTo();
-		myTasks = login.loginWith(WorkspaceUsers.TESTAPUK_USER).withPass(WorspacePasswords.TESTAPUK_PASS).login();
+		myTasks = login.loginWith(WorkspaceUsers.TESTAPAT).withPass(WorspacePasswords.TESTAPAT).login();
 		
 	}
 	

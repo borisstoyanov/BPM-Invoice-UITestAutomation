@@ -3,6 +3,7 @@ package enums;
 public enum WorkspaceUsers {
 	ADMINISTRATOR(""),
 	TESTAPUK_USER("testapuk"),
+	TESTAPAT("testapat"),
 	DIMITROV("dimitrov");
 
 	private String username;

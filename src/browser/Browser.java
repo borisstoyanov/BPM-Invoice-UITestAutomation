@@ -51,4 +51,9 @@ public class Browser {
 			}
 		}
 	}
+
+	public static void waitForID(String id, int timeout) {
+		WebDriverWait wait = new WebDriverWait(Browser.instance, timeout);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.id(id)));		
+	}
 }

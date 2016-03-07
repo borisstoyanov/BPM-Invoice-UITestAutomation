@@ -27,7 +27,7 @@ public class PO_NewInvoiceApproval {
 	}
 
 	public void submit() {
-		Browser.instance.findElement(By.xpath("//span[text()='Submit']")).click();
+		Browser.instance.findElement(By.id("ctb2")).click();
 	}
 
 	

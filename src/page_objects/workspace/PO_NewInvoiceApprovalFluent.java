@@ -22,8 +22,10 @@ public class PO_NewInvoiceApprovalFluent {
 	}
 
 	private void elemetHasText(String xpath) {
+		Browser.instance.findElement(By.xpath("//h1[text()='Entity and Vendor details']")).click();
+		
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -34,6 +36,11 @@ public class PO_NewInvoiceApprovalFluent {
 	public PO_NewInvoiceApprovalFluent addFile(String filePath) {
 		Browser.instance.findElement(By.xpath("//label[text()='Select your invoice file']//..//..//..//input"))
 				.sendKeys(filePath);
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		return this;
 
 	}
