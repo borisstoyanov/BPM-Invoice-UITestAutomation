@@ -4,20 +4,25 @@ import java.io.File;
 import java.util.Set;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Browser {
 
-	public static WebDriver instance;
+	public static RemoteWebDriver instance;
 
 	public static void init() {
-		
 		FirefoxProfile profile = new FirefoxProfile(new File("C:\\Users\\boris\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\me4atb4i.default"));                  
-		instance = new FirefoxDriver(profile);
+
+		new DesiredCapabilities();
+		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+		capabilities.setCapability(FirefoxDriver.PROFILE, profile);
+
+		instance = new RemoteWebDriver(capabilities);
 
 	}
 
