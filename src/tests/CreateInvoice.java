@@ -21,15 +21,13 @@ public class CreateInvoice {
 		myTasks = login.loginWith(WorkspaceUsers.TESTAPAT).withPass(WorspacePasswords.TESTAPAT).login();
 		
 	}
-	
-	@Test
+
+	@Test(groups = { "UITest" })
 	public void createInvoice(){
 		
 		PO_Applications app = myTasks.goToApplications();
 		PO_NewInvoiceApproval newInvoice = app.startInvoiceApproval();
-		
 		newInvoice.submit();
-
 						
 	}
 
