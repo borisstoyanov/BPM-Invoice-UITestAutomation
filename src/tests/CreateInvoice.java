@@ -14,7 +14,7 @@ import page_objects.workspace.PO_NewInvoiceApproval;
 public class CreateInvoice {
 	PO_MyTasks myTasks;
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setup(){
 		Browser.init();
 		PO_LoginPage login = PO_LoginPage.goTo();
@@ -27,7 +27,9 @@ public class CreateInvoice {
 		
 		PO_Applications app = myTasks.goToApplications();
 		PO_NewInvoiceApproval newInvoice = app.startInvoiceApproval();
-		newInvoice.submit();
+		newInvoice.submitSuccessfullInvoice();
+		
+		
 						
 	}
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Tests that are triggering browser and interacting with workspace]" allow-return-values="true">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Tests that create cache so other tests won&#039;t fail]" allow-return-values="true">
   <test name="UI Tests">
     <groups>
       <run>
@@ -21,9 +21,8 @@
       <class name="tests.CreateInvoice">
         <methods>
           <include name="createInvoice"/>
-          <include name="setup"/>
         </methods>
       </class> <!-- tests.CreateInvoice -->
     </classes>
   </test> <!-- UI Tests(failed) -->
-</suite> <!-- Failed suite [Tests that are triggering browser and interacting with workspace] -->
+</suite> <!-- Failed suite [Tests that create cache so other tests won't fail] -->

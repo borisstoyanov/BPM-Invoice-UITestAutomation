@@ -26,9 +26,17 @@ public class PO_NewInvoiceApproval {
 		return new PO_NewInvoiceApprovalFluent();
 	}
 
-	public void submit() {
+	public PO_Workspace submitSuccessfullInvoice() {
 		Browser.instance.findElement(By.id("ctb2")).click();
+		
+		Browser.handleMultipleWindows("Business Process Workspace");
+		
+		return new PO_Workspace();
 	}
 
+	public PO_NewInvoiceVerifications submitAndVerify() {
+		
+		return new PO_NewInvoiceVerifications();
+	}
 	
 }
