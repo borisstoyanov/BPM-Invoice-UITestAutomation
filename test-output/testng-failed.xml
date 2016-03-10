@@ -1,29 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Tests that are triggering browser and interacting with workspace]" allow-return-values="true">
-  <test name="UI Tests">
-    <groups>
-      <run>
-        <include name="UITest"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="tests.CreateInvoice"/>
-    </classes>
-  </test> <!-- UI Tests -->
-  <test name="UI Tests(failed)">
-    <groups>
-      <run>
-        <include name="UITest"/>
-      </run>
-    </groups>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
       <class name="tests.CreateInvoice">
         <methods>
-          <include name="createInvoice"/>
           <include name="setup"/>
+          <include name="createInvoice"/>
         </methods>
       </class> <!-- tests.CreateInvoice -->
     </classes>
-  </test> <!-- UI Tests(failed) -->
-</suite> <!-- Failed suite [Tests that are triggering browser and interacting with workspace] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

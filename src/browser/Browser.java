@@ -1,6 +1,8 @@
 package browser;
 
 import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Set;
 
 import org.openqa.selenium.By;
@@ -14,15 +16,20 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Browser {
 
 	public static RemoteWebDriver instance;
-
+	
 	public static void init() {
-		FirefoxProfile profile = new FirefoxProfile(new File("C:\\Users\\boris\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\me4atb4i.default"));                  
+		
+		FirefoxProfile profile = new FirefoxProfile(new File("firefoxProfile\\me4atb4i.default"));                  
 
 		new DesiredCapabilities();
 		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 		capabilities.setCapability(FirefoxDriver.PROFILE, profile);
 
-		instance = new RemoteWebDriver(capabilities);
+		try {
+			instance = new RemoteWebDriver(new URL("http://dev-gosling:4444/wd/hub"), capabilities);
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
 
 	}
 
