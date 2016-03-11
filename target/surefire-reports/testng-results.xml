@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Tests that are triggering browser and interacting with workspace" duration-ms="76411" started-at="2016-03-10T10:30:28Z" finished-at="2016-03-10T10:31:44Z">
+    <groups>
+      <group name="UITest">
+        <method signature="CreateInvoice.createInvoice()[pri:0, instance:tests.CreateInvoice@2f215fab]" name="createInvoice" class="tests.CreateInvoice"/>
+      </group> <!-- UITest -->
+    </groups>
+    <test name="UI Tests" duration-ms="76411" started-at="2016-03-10T10:30:28Z" finished-at="2016-03-10T10:31:44Z">
+      <class name="tests.CreateInvoice">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.CreateInvoice@2f215fab]" name="setup" is-config="true" duration-ms="21499" started-at="2016-03-10T12:30:28Z" finished-at="2016-03-10T12:30:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="createInvoice()[pri:0, instance:tests.CreateInvoice@2f215fab]" name="createInvoice" duration-ms="54901" started-at="2016-03-10T12:30:50Z" finished-at="2016-03-10T12:31:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createInvoice -->
+      </class> <!-- tests.CreateInvoice -->
+    </test> <!-- UI Tests -->
+  </suite> <!-- Tests that are triggering browser and interacting with workspace -->
+</testng-results>

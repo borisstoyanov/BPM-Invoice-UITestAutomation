@@ -2,22 +2,26 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="149337" started-at="2016-03-10T10:02:40Z" finished-at="2016-03-10T10:05:09Z">
+  <suite name="Default suite" duration-ms="81943" started-at="2016-03-11T11:37:00Z" finished-at="2016-03-11T11:38:22Z">
     <groups>
       <group name="UITest">
-        <method signature="CreateInvoice.createInvoice()[pri:0, instance:tests.CreateInvoice@5df0733a]" name="createInvoice" class="tests.CreateInvoice"/>
+        <method signature="CreateInvoice.createInvoice()[pri:0, instance:tests.CreateInvoice@4358be90]" name="createInvoice" class="tests.CreateInvoice"/>
       </group> <!-- UITest -->
     </groups>
-    <test name="Default test" duration-ms="149337" started-at="2016-03-10T10:02:40Z" finished-at="2016-03-10T10:05:09Z">
+    <test name="Default test" duration-ms="81943" started-at="2016-03-11T11:37:00Z" finished-at="2016-03-11T11:38:22Z">
       <class name="tests.CreateInvoice">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.CreateInvoice@5df0733a]" name="setup" is-config="true" duration-ms="26958" started-at="2016-03-10T12:02:40Z" finished-at="2016-03-10T12:03:07Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.CreateInvoice@4358be90]" name="setup" is-config="true" duration-ms="29677" started-at="2016-03-11T13:37:00Z" finished-at="2016-03-11T13:37:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="createInvoice()[pri:0, instance:tests.CreateInvoice@5df0733a]" name="createInvoice" duration-ms="122364" started-at="2016-03-10T12:03:07Z" finished-at="2016-03-10T12:05:09Z">
+        <test-method status="PASS" signature="createInvoice()[pri:0, instance:tests.CreateInvoice@4358be90]" name="createInvoice" duration-ms="50059" started-at="2016-03-11T13:37:30Z" finished-at="2016-03-11T13:38:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createInvoice -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:tests.CreateInvoice@4358be90]" name="cleanUp" is-config="true" duration-ms="2188" started-at="2016-03-11T13:38:20Z" finished-at="2016-03-11T13:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
       </class> <!-- tests.CreateInvoice -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

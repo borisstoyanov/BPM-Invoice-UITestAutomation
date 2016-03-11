@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Tests that are triggering browser and interacting with workspace]" allow-return-values="true">
+  <test name="UI Tests">
+    <groups>
+      <run>
+        <include name="UITest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.CreateInvoice"/>
+    </classes>
+  </test> <!-- UI Tests -->
+</suite> <!-- Failed suite [Tests that are triggering browser and interacting with workspace] -->

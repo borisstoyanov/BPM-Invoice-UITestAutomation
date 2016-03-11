@@ -1,0 +1,15 @@
+utils\Util.class
+tests\CreateInvoice.class
+page_objects\workspace\PO_LoginPageFluent.class
+page_objects\workspace\PO_MyTasks.class
+page_objects\workspace\PO_NewInvoiceVerifications.class
+page_objects\workspace\PO_Workspace.class
+page_objects\workspace\PO_LoginPage.class
+enums\WorkspaceUsers.class
+page_objects\workspace\PO_NewInvoiceApprovalFluent.class
+enums\InvoiceType.class
+browser\Browser.class
+page_objects\workspace\PO_Applications.class
+page_objects\workspace\PO_NewInvoiceApproval.class
+tests\Login.class
+enums\WorspacePasswords.class

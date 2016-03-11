@@ -1,0 +1,15 @@
+C:\Dreamix\bpm\InvoiceManagement\BPM-Invoice-UITestAutomation\src\enums\InvoiceType.java
+C:\Dreamix\bpm\InvoiceManagement\BPM-Invoice-UITestAutomation\src\page_objects\workspace\PO_Workspace.java
+C:\Dreamix\bpm\InvoiceManagement\BPM-Invoice-UITestAutomation\src\page_objects\workspace\PO_LoginPage.java
+C:\Dreamix\bpm\InvoiceManagement\BPM-Invoice-UITestAutomation\src\page_objects\workspace\PO_NewInvoiceApproval.java
+C:\Dreamix\bpm\InvoiceManagement\BPM-Invoice-UITestAutomation\src\tests\Login.java
+C:\Dreamix\bpm\InvoiceManagement\BPM-Invoice-UITestAutomation\src\browser\Browser.java
+C:\Dreamix\bpm\InvoiceManagement\BPM-Invoice-UITestAutomation\src\utils\Util.java
+C:\Dreamix\bpm\InvoiceManagement\BPM-Invoice-UITestAutomation\src\page_objects\workspace\PO_LoginPageFluent.java
+C:\Dreamix\bpm\InvoiceManagement\BPM-Invoice-UITestAutomation\src\page_objects\workspace\PO_NewInvoiceApprovalFluent.java
+C:\Dreamix\bpm\InvoiceManagement\BPM-Invoice-UITestAutomation\src\page_objects\workspace\PO_NewInvoiceVerifications.java
+C:\Dreamix\bpm\InvoiceManagement\BPM-Invoice-UITestAutomation\src\page_objects\workspace\PO_MyTasks.java
+C:\Dreamix\bpm\InvoiceManagement\BPM-Invoice-UITestAutomation\src\page_objects\workspace\PO_Applications.java
+C:\Dreamix\bpm\InvoiceManagement\BPM-Invoice-UITestAutomation\src\enums\WorspacePasswords.java
+C:\Dreamix\bpm\InvoiceManagement\BPM-Invoice-UITestAutomation\src\tests\CreateInvoice.java
+C:\Dreamix\bpm\InvoiceManagement\BPM-Invoice-UITestAutomation\src\enums\WorkspaceUsers.java

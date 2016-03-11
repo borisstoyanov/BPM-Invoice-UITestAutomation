@@ -19,7 +19,7 @@ public class Browser {
 	
 	public static void init() {
 		
-		FirefoxProfile profile = new FirefoxProfile(new File("firefoxProfile\\me4atb4i.default"));                  
+		FirefoxProfile profile = new FirefoxProfile(new File("firefoxProfile" + File.separator + "me4atb4i.default"));                  
 
 		new DesiredCapabilities();
 		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
@@ -35,6 +35,7 @@ public class Browser {
 
 	public static void quit() {
 		instance.quit();
+		
 	}
 
 	public static void waitForXpath(String xpath, int timeout) {
